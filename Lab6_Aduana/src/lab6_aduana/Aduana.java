@@ -41,8 +41,8 @@ public class Aduana extends JPanel{
         }
         
         g.setColor(Color.black);
-        g.drawString("Total de personas a las que no se ha revisado: " + noRev, 400,20);
-        g.drawString("Total de personas a las que se ha revisado: " + siRev, 400, 40);
+        g.drawString("Total de personas a las que no se ha revisado: " + siRev, 400,20);
+        g.drawString("Total de personas a las que se ha revisado: " + noRev, 400, 40);
         
         g.drawLine(400, 100, 1200, 100);
         g.drawLine(400, 600, 1200, 600);
@@ -87,7 +87,7 @@ public class Aduana extends JPanel{
           {
             Random r = new Random();
             double rnd = r.nextFloat();
-            if(rnd < 0.3){
+            if(rnd >= 0.3){
                 siRev++;
                 prevRev = 1;
             }
