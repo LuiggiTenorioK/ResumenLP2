@@ -125,7 +125,7 @@ public class Histograma extends JPanel{
         ArrayList<Integer> cantidades = new ArrayList<Integer>();
         ArrayList<String> nombres = new ArrayList<String>();
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con = DriverManager.getConnection("jdbc:mysql://quilla.lab.inf.pucp.edu.pe/a20152957?useSSL=false","a20152957","nolesdaremicontrauwur");
+        Connection con = DriverManager.getConnection("jdbc:mysql://quilla.lab.inf.pucp.edu.pe/a20153018?useSSL=false","a20153018","a5Y0bH");
         Statement sentencia = con.createStatement();
         String sql = "SELECT B.NOMBRE, SUM(C.CANTIDAD) CANTIDAD_PRODUCTOS FROM PEDIDO_FARMACIA A INNER JOIN (SELECT A.ID_PERSONA, CONCAT(A.NOMBRES, \" \", A.APELLIDO_PATERNO, \" \", B.APELLIDO_MATERNO) NOMBRE FROM PERSONA A LEFT JOIN PACIENTE B ON A.ID_PERSONA = B.ID_PACIENTE) B ON A.FID_PACIENTE = B.ID_PERSONA INNER JOIN DETALLE_PEDIDO C ON A.ID_PEDIDO = C.FID_PEDIDO GROUP BY B.NOMBRE;";
         ResultSet rs = sentencia.executeQuery(sql);
