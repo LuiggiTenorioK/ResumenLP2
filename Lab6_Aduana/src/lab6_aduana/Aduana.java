@@ -87,7 +87,7 @@ public class Aduana extends JPanel{
           {
             Random r = new Random();
             double rnd = r.nextFloat();
-            if(rnd < 0.3){
+            if(rnd >= 0.3){
                 siRev++;
                 prevRev = 1;
             }
