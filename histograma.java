@@ -9,6 +9,11 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.JButton;
@@ -35,10 +40,6 @@ public class histograma extends JPanel{
     public void paint(Graphics g){
         super.paint(g);
         int n = xL.size();
-        if(n == 0){
-            
-        }
-        
         //g.fillRect(0, 100, 10, 100);
         for(int i=0; i<n; i++){
             if(xL.get(i)>max)
@@ -106,43 +107,53 @@ public class histograma extends JPanel{
         setFocusable(true);
     }
     
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException, ClassNotFoundException, SQLException {
         // TODO code application logic here
         JFrame marco = new JFrame();
         histograma h = new histograma();
         h.setLayout(null);
         JButton generador = new JButton("Actualizar Histograma");
         generador.setBounds(20,440,330,30);
-        JTextField texto = new JTextField();
-        JTextField texto1 = new JTextField();
-        JLabel label = new JLabel();
-        JLabel label1 = new JLabel();
-        label.setBounds(20, 360, 150, 30);
-        label1.setBounds(250, 360, 150, 30);
-        label.setText("Ingrese cantidad");
-        label1.setText("Ingrese tipo");
-        h.add(label);
-        h.add(label1);
-        texto.setBounds(20,400,150,30);
-        texto1.setBounds(200,400,150,30);
-        h.add(texto);
-        h.add(texto1);
-        
+        //JTextField texto = new JTextField();
+        //JTextField texto1 = new JTextField();
+        //JLabel label = new JLabel();
+        //JLabel label1 = new JLabel();
+        //label.setBounds(20, 360, 150, 30);
+        //label1.setBounds(250, 360, 150, 30);
+        //label.setText("Ingrese cantidad");
+        //label1.setText("Ingrese tipo");
+        //h.add(label);
+        //h.add(label1);
+        //texto.setBounds(20,400,150,30);
+        //texto1.setBounds(200,400,150,30);
+        //h.add(texto);
+        //h.add(texto1);
         ArrayList<Integer> l = new ArrayList<Integer>();
         ArrayList<String> l1 = new ArrayList<String>();
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection("jdbc:mysql://quilla.lab.inf.pucp.edu.pe/a20152131?useSSL=false","a20152131","BRU TERMINA DE VER CODE GEASS CTM");
+        Statement sentencia = con.createStatement();
+        String sql = "SELECT B.NOMBRE, SUM(C.CANTIDAD) CANTIDAD_PRODUCTOS FROM PEDIDO_FARMACIA A INNER JOIN (SELECT A.ID_PERSONA, CONCAT(A.NOMBRES, \" \", A.APELLIDO_PATERNO, \" \", B.APELLIDO_MATERNO) NOMBRE FROM PERSONA A LEFT JOIN PACIENTE B ON A.ID_PERSONA = B.ID_PACIENTE) B ON A.FID_PACIENTE = B.ID_PERSONA INNER JOIN DETALLE_PEDIDO C ON A.ID_PEDIDO = C.FID_PEDIDO GROUP BY B.NOMBRE;";
+        ResultSet rs = sentencia.executeQuery(sql);
+        while(rs.next()){
+            l.add(rs.getInt("CANTIDAD_PRODUCTOS"));
+            l1.add(rs.getString("NOMBRE"));
+        }
+        con.close();
+        
         //l.add(10);
         //l1.add("Label");
-        h.llenarLista(l, l1);
+        //h.llenarLista(l, l1);
         generador.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent e)
             {
-                Integer x;
-                String s;
-                x = Integer.parseInt(texto.getText());
-                s = texto1.getText();
-                l.add(x);
-                l1.add(s);
+                //Integer x;
+                //String s;
+                //x = Integer.parseInt(texto.getText());
+                //s = texto1.getText();
+                //l.add(x);
+                //l1.add(s);
                 h.llenarLista(l, l1);
                 h.repaint();
             }
@@ -151,10 +162,6 @@ public class histograma extends JPanel{
         marco.add(h);
         marco.setVisible(true);
         marco.setSize(500,600);
-        
-        while(true){
-            Thread.sleep(10);
-        }
     }
     
 }
