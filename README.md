@@ -18,3 +18,4 @@ Repositorio de codigos de LP2 durante el ciclo 2018-1. Una pequeña ayuda para l
 * **Patricio Avila**
 * **Bruno Espezua**
 * **Jorge Alfaro**
+* **Enrique Huamanyauri**
