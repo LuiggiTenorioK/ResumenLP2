@@ -6,16 +6,16 @@ Repositorio de codigos de LP2 durante el ciclo 2018-1. Una pequeña ayuda para l
 
 * **Luiggi Tenorio** - [LuiggiTenorioK](https://github.com/LuiggiTenorioK)
 * **Arian Gallardo** - [ariangc](https://github.com/ariangc)
-* **Bruno Diaz**
-* **Daniel Alpiste**
-* **Andres Gonzales**
+* **Bruno Diaz** - [Haruchon](https://github.com/Haruchon)
+* **Daniel Alpiste** - [DanielAlpiste](https://github.com/DanielAlpiste)
+* **Andres Gonzales** - [anime-senpai](https://github.com/anime-senpai)
 * **Paulo Tuya**
-* **Daniela Cisneros**
+* **Daniela Cisneros** - [dcisneros98](https://github.com/dcisneros98)
 * **Frank Gonzales**
 * **Martin Caro**
-* **Alvaro Lira**
-* **Luis Carranza**
+* **Alvaro Lira** - [alvarolirap](https://github.com/alvarolirap)
+* **Luis Carranza** - [locoxsoco](https://github.com/locoxsoco)
 * **Patricio Avila**
 * **Bruno Espezua**
 * **Jorge Alfaro**
-* **Enrique Huamanyauri**
+* **Enrique Huamanyauri** - [blurry17](https://github.com/blurry17)
