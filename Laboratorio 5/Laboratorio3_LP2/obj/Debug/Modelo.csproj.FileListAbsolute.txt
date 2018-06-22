@@ -1,0 +1,7 @@
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\bin\Debug\Laboratorio3_LP2.dll.config
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\bin\Debug\Laboratorio3_LP2.dll
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\bin\Debug\Laboratorio3_LP2.pdb
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\obj\Debug\Laboratorio3_LP2.dll
+C:\Users\arian\Desktop\Lab5\Laboratorio5_LP2\Laboratorio3_LP2\obj\Debug\Laboratorio3_LP2.pdb
