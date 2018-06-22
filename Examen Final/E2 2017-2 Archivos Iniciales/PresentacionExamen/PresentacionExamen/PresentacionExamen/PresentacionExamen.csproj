@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4435FB25-6A70-45DA-A5D8-184B354FB54D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentacionExamen</RootNamespace>
+    <AssemblyName>PresentacionExamen</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmGestionPartidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGestionPartidos.Designer.cs">
+      <DependentUpon>frmGestionPartidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGestionPartidos.resx">
+      <DependentUpon>frmGestionPartidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PORTUGAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RUSIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SENEGAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SERBIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUECIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SUIZA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TUNEZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URUGUAY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ALEMANIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARABIA SAUDI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ARGENTINA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AUSTRALIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BELGICA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BRASIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COLOMBIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COREA DEL SUR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COSTA RICA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CROACIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DINAMARCA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EGIPTO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESPAÑA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FRANCIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INGLATERRA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRAN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ISLANDIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JAPON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MARRUECOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MEXICO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NIGERIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PANAMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\POLONIA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

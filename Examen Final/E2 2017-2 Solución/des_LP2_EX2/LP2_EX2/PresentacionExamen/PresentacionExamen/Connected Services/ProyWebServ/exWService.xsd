@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Service/" targetNamespace="http://Service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getGrupos" type="tns:getGrupos" />
+  <xs:element name="getGruposResponse" type="tns:getGruposResponse" />
+  <xs:element name="getPaises" type="tns:getPaises" />
+  <xs:element name="getPaisesResponse" type="tns:getPaisesResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:complexType name="getPaises">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="grupo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getPaisesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:pais" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pais">
+    <xs:sequence>
+      <xs:element name="cat" type="xs:int" />
+      <xs:element name="df" type="xs:int" />
+      <xs:element name="gc" type="xs:int" />
+      <xs:element name="gf" type="xs:int" />
+      <xs:element name="grp" type="xs:unsignedShort" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="pe" type="xs:int" />
+      <xs:element name="pg" type="xs:int" />
+      <xs:element name="pj" type="xs:int" />
+      <xs:element name="pp" type="xs:int" />
+      <xs:element name="pts" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getGrupos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getGruposResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

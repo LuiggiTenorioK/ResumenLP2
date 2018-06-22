@@ -1,0 +1,12 @@
+T:\LP2_EX2\PresentacionExamen\Control\bin\Debug\Control.dll.config
+T:\LP2_EX2\PresentacionExamen\Control\bin\Debug\Control.dll
+T:\LP2_EX2\PresentacionExamen\Control\bin\Debug\Control.pdb
+T:\LP2_EX2\PresentacionExamen\Control\obj\Debug\Control.csprojResolveAssemblyReference.cache
+T:\LP2_EX2\PresentacionExamen\Control\obj\Debug\Control.dll
+T:\LP2_EX2\PresentacionExamen\Control\obj\Debug\Control.pdb
+C:\Users\Emilio\Documents\ProgProys\LP2_EX2\PresentacionExamen\Control\bin\Debug\Control.dll.config
+C:\Users\Emilio\Documents\ProgProys\LP2_EX2\PresentacionExamen\Control\bin\Debug\Control.dll
+C:\Users\Emilio\Documents\ProgProys\LP2_EX2\PresentacionExamen\Control\bin\Debug\Control.pdb
+C:\Users\Emilio\Documents\ProgProys\LP2_EX2\PresentacionExamen\Control\obj\Debug\Control.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Documents\ProgProys\LP2_EX2\PresentacionExamen\Control\obj\Debug\Control.dll
+C:\Users\Emilio\Documents\ProgProys\LP2_EX2\PresentacionExamen\Control\obj\Debug\Control.pdb

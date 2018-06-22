@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://Service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="exWService" targetNamespace="http://Service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/lp2ex2java/exWService?xsd=1" namespace="http://Service/" />
+    </xsd:schema>
+  </types>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="getPaises">
+    <part name="parameters" element="tns:getPaises" />
+  </message>
+  <message name="getPaisesResponse">
+    <part name="parameters" element="tns:getPaisesResponse" />
+  </message>
+  <message name="getGrupos">
+    <part name="parameters" element="tns:getGrupos" />
+  </message>
+  <message name="getGruposResponse">
+    <part name="parameters" element="tns:getGruposResponse" />
+  </message>
+  <portType name="exWService">
+    <operation name="hello">
+      <input wsam:Action="http://Service/exWService/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://Service/exWService/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="getPaises">
+      <input wsam:Action="http://Service/exWService/getPaisesRequest" message="tns:getPaises" />
+      <output wsam:Action="http://Service/exWService/getPaisesResponse" message="tns:getPaisesResponse" />
+    </operation>
+    <operation name="getGrupos">
+      <input wsam:Action="http://Service/exWService/getGruposRequest" message="tns:getGrupos" />
+      <output wsam:Action="http://Service/exWService/getGruposResponse" message="tns:getGruposResponse" />
+    </operation>
+  </portType>
+  <binding name="exWServicePortBinding" type="tns:exWService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getPaises">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getGrupos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="exWService">
+    <port name="exWServicePort" binding="tns:exWServicePortBinding">
+      <soap:address location="http://localhost:8080/lp2ex2java/exWService" />
+    </port>
+  </service>
+</definitions>
