@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios/">
+
+<xs:element name="dividir" type="tns:dividir"/>
+
+<xs:element name="dividirResponse" type="tns:dividirResponse"/>
+
+<xs:element name="multiplicar" type="tns:multiplicar"/>
+
+<xs:element name="multiplicarResponse" type="tns:multiplicarResponse"/>
+
+<xs:element name="restar" type="tns:restar"/>
+
+<xs:element name="restarResponse" type="tns:restarResponse"/>
+
+<xs:element name="saludar" type="tns:saludar"/>
+
+<xs:element name="saludarResponse" type="tns:saludarResponse"/>
+
+<xs:element name="sumar" type="tns:sumar"/>
+
+<xs:element name="sumarResponse" type="tns:sumarResponse"/>
+
+<xs:complexType name="restar">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicar">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dividir">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dividirResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumar">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saludar">
+<xs:sequence>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saludarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
