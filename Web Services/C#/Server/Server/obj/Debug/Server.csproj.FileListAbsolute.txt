@@ -1,0 +1,7 @@
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\bin\Server.dll.config
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\bin\Server.dll
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\bin\Server.pdb
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\obj\Debug\Server.dll
+C:\Users\Alvaro\Desktop\Pruebas\Server\Server\obj\Debug\Server.pdb
