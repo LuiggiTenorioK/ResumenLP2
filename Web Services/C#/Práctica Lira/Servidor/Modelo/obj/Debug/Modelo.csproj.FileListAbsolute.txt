@@ -1,0 +1,6 @@
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Modelo\bin\Debug\Modelo.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Modelo\bin\Debug\Modelo.pdb
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Modelo\obj\Debug\Modelo.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Modelo\obj\Debug\Modelo.pdb

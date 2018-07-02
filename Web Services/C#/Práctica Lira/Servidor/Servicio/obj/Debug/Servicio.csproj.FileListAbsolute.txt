@@ -1,0 +1,13 @@
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\Servicio.dll.config
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\Servicio.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\Servicio.pdb
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\AccesoDatos.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\Modelo.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\MySql.Data.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\AccesoDatos.pdb
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\bin\Modelo.pdb
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\obj\Debug\Servicio.dll
+C:\Users\Alvaro\Desktop\Pruebas\Servidor\Servicio\obj\Debug\Servicio.pdb

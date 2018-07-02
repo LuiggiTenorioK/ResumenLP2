@@ -1,0 +1,7 @@
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\bin\Debug\LogicaNegocio.dll.config
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\bin\Debug\LogicaNegocio.dll
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\bin\Debug\LogicaNegocio.pdb
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\obj\Debug\LogicaNegocio.csprojAssemblyReference.cache
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\obj\Debug\LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\obj\Debug\LogicaNegocio.dll
+C:\Users\Alvaro\Desktop\Pruebas\Vistas\LogicaNegocio\obj\Debug\LogicaNegocio.pdb

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="registrar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="tns:Aeropuerto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Aeropuerto">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ubicacion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Mts_altura" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="registrarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="registrarResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="listar">
+        <s:complexType />
+      </s:element>
+      <s:element name="listarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="listarResult" type="tns:ArrayOfAeropuerto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAeropuerto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Aeropuerto" nillable="true" type="tns:Aeropuerto" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="eliminar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="eliminarResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="modificar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="tns:Aeropuerto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="modificarResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="registrarSoapIn">
+    <wsdl:part name="parameters" element="tns:registrar" />
+  </wsdl:message>
+  <wsdl:message name="registrarSoapOut">
+    <wsdl:part name="parameters" element="tns:registrarResponse" />
+  </wsdl:message>
+  <wsdl:message name="listarSoapIn">
+    <wsdl:part name="parameters" element="tns:listar" />
+  </wsdl:message>
+  <wsdl:message name="listarSoapOut">
+    <wsdl:part name="parameters" element="tns:listarResponse" />
+  </wsdl:message>
+  <wsdl:message name="eliminarSoapIn">
+    <wsdl:part name="parameters" element="tns:eliminar" />
+  </wsdl:message>
+  <wsdl:message name="eliminarSoapOut">
+    <wsdl:part name="parameters" element="tns:eliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="modificarSoapIn">
+    <wsdl:part name="parameters" element="tns:modificar" />
+  </wsdl:message>
+  <wsdl:message name="modificarSoapOut">
+    <wsdl:part name="parameters" element="tns:modificarResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AeropuertoWSSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="registrar">
+      <wsdl:input message="tns:registrarSoapIn" />
+      <wsdl:output message="tns:registrarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="listar">
+      <wsdl:input message="tns:listarSoapIn" />
+      <wsdl:output message="tns:listarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="eliminar">
+      <wsdl:input message="tns:eliminarSoapIn" />
+      <wsdl:output message="tns:eliminarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="modificar">
+      <wsdl:input message="tns:modificarSoapIn" />
+      <wsdl:output message="tns:modificarSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AeropuertoWSSoap" type="tns:AeropuertoWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrar">
+      <soap:operation soapAction="http://tempuri.org/registrar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar">
+      <soap:operation soapAction="http://tempuri.org/listar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminar">
+      <soap:operation soapAction="http://tempuri.org/eliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificar">
+      <soap:operation soapAction="http://tempuri.org/modificar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AeropuertoWSSoap12" type="tns:AeropuertoWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registrar">
+      <soap12:operation soapAction="http://tempuri.org/registrar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listar">
+      <soap12:operation soapAction="http://tempuri.org/listar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="eliminar">
+      <soap12:operation soapAction="http://tempuri.org/eliminar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificar">
+      <soap12:operation soapAction="http://tempuri.org/modificar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AeropuertoWS">
+    <wsdl:port name="AeropuertoWSSoap" binding="tns:AeropuertoWSSoap">
+      <soap:address location="http://localhost:8960/AeropuertoWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AeropuertoWSSoap12" binding="tns:AeropuertoWSSoap12">
+      <soap12:address location="http://localhost:8960/AeropuertoWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
